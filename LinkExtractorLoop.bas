@@ -1,8 +1,10 @@
 Attribute VB_Name = "LinkExtractorLoop"
+' DESCRIPTION:
 ' This module will go down a list of links and extract their embedded links.
 ' Extracted links will be copied to the right of the original cell
 ' Original link cell will lose all formatting
 
+' REQUIREMENTS:
 ' List of links must be vertical with no blank cells in between
 ' Ensure that cells that are directly to the right of the list are blank
 ' Select top link cell then run module

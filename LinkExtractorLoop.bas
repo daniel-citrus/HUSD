@@ -11,10 +11,13 @@ Attribute VB_Name = "LinkExtractorLoop"
 
 Sub ExtractLinksLoop()
     Do While ActiveCell <> ""
-        ActiveCell.Offset(0, 1) = GetURL(ActiveCell)
-        ActiveCell.ClearFormats
-        ActiveCell.Hyperlinks.Delete
-        ActiveCell.Offset(1, 0).Select
+        With ActiveCell
+            .ClearFormats
+            .Offset(0, 1) = GetURL(ActiveCell)
+            .Hyperlinks.Delete
+            .Offset(1, 0).Select
+        End With
+
     Loop
 End Sub
 

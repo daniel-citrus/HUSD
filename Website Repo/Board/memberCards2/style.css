@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    max-width: 735px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    
+    max-height: 151px;
+    max-width: 146px;
+  }
+  
+  .card {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1px;
+  }
+  
+  .description {
+    text-align: center;
+    background-color: #006496;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    font-weight:bold;
+    flex: 0 1 50px;
+  }
+  
+  #board {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2px;
+    margin: 0 auto;
+  }
+  
